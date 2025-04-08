@@ -4,12 +4,9 @@
         <title>Tekerz Robotics</title>
     </head>
     <style>
-.menu {
-    text-align: center;
-    font-family: sans-serif;
-}
 a {
     color: blue;
+    text-decoration: none;
 }
 footer {
     background-color: #663399;
@@ -21,29 +18,70 @@ footer {
     width: 100%;
 }
 section {
-    width: 300px;
-    margin: 20px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 #purple-section {
     background-color:#663399;
-    color:yellow
+    color:white;
+    text-align: center;
+    font-size: large;
+}
+#green-section {
+    background-color:rgb(47, 144, 47);
+    color:white;
+    text-align: center;
+    font-size: large;
+}
+#yellow-section {
+    background-color:rgb(255, 255, 0);
+    color:#663399;
+    text-align: center;
+    font-size: large;
+}
+.menu {
 }
     </style>
     <body>
-        <section id="purple-section">
+        <div class="menu">
+    <section id="purple-section">
             <h2>FRC 3574</h2>
         </section>
-<div class=menu><h1><a href=site url>Tekerz</a></h1>
-<h2><a>FRC 3574</a> |
-<a>FTC 11109</a> |
-<a>FTC 21764</a></h2></div>
+            <section id="green-section">
+                <h2>FTC 11109</h2>
+            </section>
+            <section id="yellow-section">
+                <h2>FTC 21764</h2>
+            </section>
+        </div>
 <footer>
+    <h3>Sponsors:</h3>
+    <p>4h</p>
     <h3>Contact:</h3>
     <p>tekerzrobotics@gmail.com</p>
     <p>&copy; 2025 Tekerz Robotics</p>
 </footer>
+<script>
+const button = document.getElementById('purple-section');
+    button.onclick = function() {
+        window.location.href = "https://www.github.com";
+    };
+
+const myElement = document.getElementById("purple-section");
+
+myElement.addEventListener("mouseover", function() {
+
+    myElement.style.cursor = "pointer";
+});
+
+myElement.addEventListener("mouseout", function() {
+  myElement.style.cursor = "default";
+});
+
+    </script>
     </body>
 </html>
