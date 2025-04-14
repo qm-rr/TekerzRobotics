@@ -23,6 +23,100 @@ header {
     position:fixed;
     width: 100%;
 }
+/* resources dropdown start*/
+.resourcesbtn{
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.resourcesbtn:hover{
+    background-color: #582c85;
+}
+.resources {
+    position:relative;
+    display: inline-block;
+}
+.resources-content{
+    display: none;
+  position: absolute;
+  background-color:#663399;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+.resources-content a { 
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+.resources-content a:hover {background-color: #582c85;}
+.resources:hover .resources-content {
+    display: block;
+}
+.resources:hover .resourcesbtn {
+    background-color: #582c85;
+}
+/*resources dropdown end*/
+/*log dropdown start*/
+.logbtn {
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.logbtn:hover {    background-color: #582c85;}
+.log{
+    position:relative;
+    display: inline-block;
+}
+.log-content{
+    display: none;
+  position: absolute;
+  background-color:#663399;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+.log-content a { 
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+.log-content a:hover {background-color: #582c85;}
+.log:hover .log-content {
+    display: block;
+}
+.log:hover .logbtn {
+    background-color: #582c85;
+}
+/*log dropdown end*/
+.gallerybtn {
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.gallerybtn:hover {    background-color: #582c85;}
+
 .sponsorsbtn {
     background-color: #663399;
     color: #fff;
@@ -62,7 +156,7 @@ header {
 .teambtn:hover {
     background-color: #582c85;
 }
-
+/* more dropdown start*/
 .morebtn{
     background-color: #663399;
     color: #fff;
@@ -100,13 +194,28 @@ header {
 .more:hover .morebtn {
     background-color: #582c85;
 }
+/* more dropdown end*/
 body {
-
+background-image: url(C:\Users\masab\Downloads\roboticsteampic.jpg);
 }
 </style>
     <body>
         <header>
             <a href="#"><button class="homebtn">HOME</button></a>
+            <div class="resources">
+            <a href="#"><button class="resourcesbtn">RESOURCES</button></a>
+            <div class="resources-content">
+                <a href="#">GitHub</a>
+                <a href="#">CAD</a>
+            </div>
+        </div>
+        <div class="log">
+            <a href="#"><button class="logbtn">BUILD LOG</button></a>
+            <div class="log-content">
+                <a href="#">2025</a>
+            </div>
+        </div>
+            <a href="#"><button class="gallerybtn">GALLERY</button></a>
             <a href="#"><button class="teambtn">THE TEAM</button></a>
             <a href="#"><button class="sponsorsbtn">SPONSORS</button></a>
             <div class="more">
