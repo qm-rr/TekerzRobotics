@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tekerz Robotics</title>
+        <link rel="icon" type="image/x-icon" href="C:\Users\masab\OneDrive\Documents\GitHub\masalp\tekerz-favIcon.webp">
+    </head>
+    <style>
+footer {
+    background-color: #663399;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position:absolute;
+    bottom: -24vh;
+    width: 100%;
+    height: 75px;
+}
+header {
+    background-color:white;
+    color:#fff;
+    text-align: center;
+    padding: 10px;
+    position:fixed;
+    width: 100%;
+height: 40px;
+}
+
+/* resources dropdown start*/
+.resourcesbtn{
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.resourcesbtn:hover{
+    background-color: #582c85;
+}
+.resources {
+    position:relative;
+    display: inline-block;
+}
+.resources-content{
+    display: none;
+  position: absolute;
+  background-color:#663399;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+.resources-content a { 
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+.resources-content a:hover {background-color: #582c85;}
+.resources:hover .resources-content {
+    display: block;
+}
+.resources:hover .resourcesbtn {
+    background-color: #582c85;
+}
+/*resources dropdown end*/
+/*log dropdown start*/
+.logbtn {
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.logbtn:hover {    background-color: #582c85;}
+.log{
+    position:relative;
+    display: inline-block;
+}
+.log-content{
+    display: none;
+  position: absolute;
+  background-color:#663399;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+.log-content a { 
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+.log-content a:hover {background-color: #582c85;}
+.log:hover .log-content {
+    display: block;
+}
+.log:hover .logbtn {
+    background-color: #582c85;
+}
+/*log dropdown end*/
+.gallerybtn {
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.gallerybtn:hover {    background-color: #582c85;}
+
+.sponsorsbtn {
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.sponsorsbtn:hover { 
+    background-color: #582c85;
+}
+.homebtn{
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.homebtn:hover {
+    background-color: #582c85;
+}
+/*team dropdown start*/
+.teambtn{
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.teambtn:hover {
+    background-color: #582c85;
+}
+.team{
+    position:relative;
+    display: inline-block;
+}
+.team-content{
+    display: none;
+  position: absolute;
+  background-color:#663399;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+.team-content a { 
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+.team-content a:hover {background-color: #582c85;}
+.team:hover .team-content {
+    display: block;
+}
+.team:hover .teambtn {
+    background-color: #582c85;
+}
+/*team dropdown end*/
+/* more dropdown start*/
+.morebtn{
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.more{
+    position:relative;
+    display: inline-block;
+}
+.more-content{
+    display: none;
+  position: absolute;
+  background-color:#663399;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+.more-content a { 
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+.more-content a:hover {background-color: #582c85;}
+.more:hover .more-content {
+    display: block;
+}
+.more:hover .morebtn {
+    background-color: #582c85;
+}
+/* more dropdown end*/
+body {
+background-image: url("fieldteamimg-modified.jpg");
+background-size: 100%;
+/*background-position: top;*/
+margin-top: 0;
+margin-left: 0;
+min-height: calc(120vh);
+background-size: cover; /* Cover the entire area */
+background-position: center; 
+}
+img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+}
+</style>
+    <body>
+        <header>
+            <a href="#"><button class="homebtn"><u>HOME</u></button></a>
+            <div class="resources">
+            <a href="#"><button class="resourcesbtn">RESOURCES</button></a>
+            <div class="resources-content">
+                <a href="#">GitHub</a>
+                <a href="#">CAD</a>
+            </div>
+        </div>
+        <div class="log">
+            <a href="#"><button class="logbtn">BUILD LOG</button></a>
+            <div class="log-content">
+                <a href="#">2025</a>
+            </div>
+        </div>
+            <a href="#"><button class="gallerybtn">GALLERY</button></a>
+            <div class="team">
+            <a href="#"><button class="teambtn">THE TEAM</button></a>
+            <div class="team-content">
+                <a href="C:\Users\masab\Documents\GitHub\TekerzRobotics\Members.html">TEAM MEMBERS</a>
+                <a href="#">ACHIEVEMENTS</a>
+            </div>
+        </div>
+            <a href="#"><button class="sponsorsbtn">SPONSORS</button></a>
+            <div class="more">
+                <button class="morebtn">MORE</button>
+                <div class="more-content">
+                    <a href="https://www.thebluealliance.com/team/3574/">3574</a>
+                    <a href="https://www.firstinspires.org/robotics/frc">FIRST</a>
+                    <a href="#">Safety Manual</a>
+                </div>
+            </div>
+        </header>
+<img src="picturetopeople.org-90ef6bf5995fdfcda29e865ba57988c9ad55232291ea751920.png">
+<footer>
+    <p>tekerzrobotics@gmail.com</p>
+    <p>&copy; 2025 Tekerz Robotics</p>
+</footer>
+    </body>
+</html>
