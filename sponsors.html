@@ -1,8 +1,11 @@
 <!doctype html>
 <html>
     <head>
-        <title>Tekerz Robotics</title>
+        <title>Sponsors</title>
         <link rel="icon" type="image/x-icon" href="tekerz-favIcon.webp">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <style>
 footer {
@@ -10,8 +13,8 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position:absolute;
-    bottom: -24vh;
+    position:sticky;
+/*    bottom: -24vh;*/
     width: 100%;
     height: 75px;
 }
@@ -20,7 +23,7 @@ header {
     color:#fff;
     text-align: center;
     padding: 10px;
-    position:fixed;
+    position:sticky;
     width: 100%;
 height: 40px;
 }
@@ -51,7 +54,7 @@ height: 40px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .resources-content a { 
     color: white;
@@ -221,39 +224,27 @@ height: 40px;
     text-decoration: none;
     display: block;
     border-radius: 10px;
+   
 }
-
 .more-content a:hover {background-color: #582c85;}
 .more:hover .more-content {
     display: block;
 }
 .more:hover .morebtn {
     background-color: #582c85;
-}
-/* more dropdown end*/
+}/* more dropdown end*/
+
+
 body {
-background-image: url("fieldteamimg-modified.jpg");
-background-size: 100%;
-/*background-position: top;*/
 margin-top: 0;
 margin-left: 0;
-min-height: calc(120vh);
-background-size: cover; /* Cover the entire area */
-background-position: center; 
+min-height: calc(120vh); 
+
 }
-img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100px;
-}
-</style>
+    </style>
     <body>
         <header>
-            <a href="#"><button class="homebtn"><u>HOME</u></button></a>
+            <a href="https://qm-rr.github.io/TekerzRobotics/"><button class="homebtn">HOME</button></a>
             <div class="resources">
             <a href="#"><button class="resourcesbtn">RESOURCES</button></a>
             <div class="resources-content">
@@ -269,13 +260,13 @@ img {
         </div>
             <a href="#"><button class="gallerybtn">GALLERY</button></a>
             <div class="team">
-            <a href="#"><button class="teambtn">THE TEAM</button></a>
+            <a href="#"><button class="teambtn"><u>THE TEAM</u></button></a>
             <div class="team-content">
-                <a href="https://qm-rr.github.io/TekerzRobotics/Members.html">TEAM MEMBERS</a>
+                <a href="#"><u>TEAM MEMBERS</u></a>
                 <a href="#">ACHIEVEMENTS</a>
             </div>
         </div>
-            <a href="https://qm-rr.github.io/TekerzRobotics/sponsors"><button class="sponsorsbtn">SPONSORS</button></a>
+            <a href="#"><button class="sponsorsbtn">SPONSORS</button></a>
             <div class="more">
                 <button class="morebtn">MORE</button>
                 <div class="more-content">
@@ -285,10 +276,11 @@ img {
                 </div>
             </div>
         </header>
-<img src="picturetopeople.org-90ef6bf5995fdfcda29e865ba57988c9ad55232291ea751920.png">
-<footer>
-    <p>tekerzrobotics@gmail.com</p>
-    <p>&copy; 2025 Tekerz Robotics</p>
-</footer>
+        <div class="header">
+        <h1>Our 2025 Sponsors</h1>
+    </div>
+    <footer>
+        <p>tekerzrobotics@gmail.com</p>
+        <p>&copy; 2025 Tekerz Robotics</p>
+    </footer>
     </body>
-</html>
