@@ -268,7 +268,47 @@ float: left;
 .omax{width: 200px;
 float: left;
 }*/
+div.gallery {
+  border: 1px solid #ccc;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 30%;
+  margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49%;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
     <body>
         <header>
@@ -307,13 +347,36 @@ float: left;
         <div class="header">
         <h1>Our 2025 Sponsors</h1>
     </div>
-<div class="sponsorsImgs">
-<div class="boeing"><!--boeing--><img src="https://cdn.freebiesupply.com/images/large/2x/boeing-logo-png-transparent.png" alt="Boeing" width="90%"></div>
-<div class="firstWa"><!--first wa--><img src="https://images.squarespace-cdn.com/content/v1/5bc25478e4afe9255533eb48/9d687a95-ce16-4ba1-b8d5-d9282227d841/firstwalogo.jpg" alt="FIRST WA" width="90%"></div>
-<div class="senator"><!--senator patty murray--><img src="https://i.ytimg.com/vi/LeRNlrmL6R4/maxresdefault.jpg" alt="Senator Patty Murray" width="50%"></div>
-<div class="fourH"><!--4h--><img src="https://cdn.freebiesupply.com/images/large/2x/4h-logo-png-transparent.png" alt="4 H" width="40%"></div>
-<div class="omax"><!--omax--><img src="https://capitalmachine.com/wp-content/uploads/omax-logo.png" alt="Omax Waterjet" width="90%"></div>
-</div>
+<!--<div class="sponsorsImgs">
+<div class="boeing"><!--boeing--><!--<img src="https://cdn.freebiesupply.com/images/large/2x/boeing-logo-png-transparent.png" alt="Boeing" width="90%"></div>
+<!--<div class="firstWa"><!--first wa--><!--<img src="https://images.squarespace-cdn.com/content/v1/5bc25478e4afe9255533eb48/9d687a95-ce16-4ba1-b8d5-d9282227d841/firstwalogo.jpg" alt="FIRST WA" width="90%"></div>
+<!--<div class="senator"><!--senator patty murray--><!--<img src="https://i.ytimg.com/vi/LeRNlrmL6R4/maxresdefault.jpg" alt="Senator Patty Murray" width="50%"></div>
+<!--<div class="fourH"><!--4h--><!--<img src="https://cdn.freebiesupply.com/images/large/2x/4h-logo-png-transparent.png" alt="4 H" width="40%"></div>
+<!--<div class="omax"><!--omax--><!--<img src="https://capitalmachine.com/wp-content/uploads/omax-logo.png" alt="Omax Waterjet" width="90%"></div>
+</div>-->
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://www.boeing.com">
+        <img src="https://cdn.freebiesupply.com/images/large/2x/boeing-logo-png-transparent.png" alt="Boeing">
+      </a>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://www.firstwa.org">
+        <img src="https://images.squarespace-cdn.com/content/v1/5bc25478e4afe9255533eb48/9d687a95-ce16-4ba1-b8d5-d9282227d841/firstwalogo.jpg" alt="FIRST WA">
+      </a>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://www.murray.senate.gov/">
+        <img src="https://i.ytimg.com/vi/LeRNlrmL6R4/maxresdefault.jpg" alt="Senator Patty Murray">
+      </a>
+    </div>
     <footer>
         <p>tekerzrobotics@gmail.com</p>
         <p>&copy; 2025 Tekerz Robotics</p>
